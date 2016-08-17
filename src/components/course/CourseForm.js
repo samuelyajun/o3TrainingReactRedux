@@ -15,9 +15,9 @@ const CourseForm = ({course, allAuthors, allTeacherAids, onSave, onChange, savin
 			<CommentTextInput name="category" label="Session Notes" value={course.category} onChange={onChange} error={errors.category}/>
 			<CommentTextInput name="length" label="Follwow up on Previous O3 Action Items" value={course.length} onChange={onChange} error={errors.length}/>
 			<CommentTextInput name="length" label="This Week's Action Items" value={course.length} onChange={onChange} error={errors.length}/>
-			<input type="submit" disabled={saving} value={saving ? 'Saving...' : 'Save'} className="btn btn-primary" onClick={onSave}/>
+			<input type="submit" disabled={saving} value={saving ? 'Saving...' : 'Save'} className="btn btn-success" onClick={onSave}/>
 			<span>      &nbsp;  </span>
-			<input type="cancel" value="Cancel" className="btn btn-primary" onClick=""/>
+			<input type="submit" value="Cancel" className="btn btn-success" onClick=""/>
 		</form>
 	);
 };
