@@ -22,19 +22,6 @@ class ManageCoursePage extends React.Component {
 		this.saveCourse = this.saveCourse.bind(this);
 	}
 
-	// componentDidMount() { 
-	// 	//const currentDate = dateApi.getCurrentDate();
-	// 	dateApi.getCurrentDate().then(
-	// 		function(data) {
-	// 		//currentDate=data;
-	// 		console.log("data:" + data);
-	// 		// console.log("in ManageCoursePage, currentDate: " + data[0].date.toString());
-	// 		// this.setState({currentDate:  [data[0].date.toString()]});
-	// 	    }
-	//     );
-	// 	//console.log("in ManageCoursePage, currentDate: " + currentDate[0].date.toString() );
- //        //this.setState({currentDate: currentDate});
- //    }
 
 	componentWillReceiveProps(nextProps) {
 		debugger;
@@ -75,7 +62,7 @@ class ManageCoursePage extends React.Component {
 		debugger;
 		return (
 				<div>
-					<h1>O3 for week of {this.state.currentDate[0].date.toString()}</h1>
+					<h1>O3 for week of {this.state.currentDate[0].date.toString().split(" ").slice(1,4).join(' ')}</h1>
 					<CourseForm allAuthors={this.props.authors}  allTeacherAids={this.props.teacherAids} onChange={this.updateCourseState}  onSave={this.saveCourse} course={this.state.course} errors={this.state.errors} saving={this.state.saving} />
 				</div>
 		);
