@@ -5,15 +5,15 @@ import delay from './delay';
 // All calls return promises.
 const ratingRanks = [
   {
-    id: '1',
+    id: 'Ahead',
     rating: 'Ahead'
   },
   {
-    id: '2',
+    id: 'On-Track',
     rating: 'On-Track'
   },
   {
-    id: '1',
+    id: 'At Risk',
     rating: 'At Risk'
   }
 ];
