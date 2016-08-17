@@ -2,6 +2,7 @@ import React from 'react';
 
 const GetFormattedDate = () =>  {
 	  var date = new Date();
+	  date.setDate(date.getDate() - (date.getDay() + 6) % 7);
 	  var year = date.getFullYear();
 	  var month = (1 + date.getMonth()).toString();
 	  var day = date.getDate().toString();
