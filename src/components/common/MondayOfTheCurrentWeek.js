@@ -10,14 +10,14 @@ const GetFormattedDate = () =>  {
 	  return month + '/' + day + '/' + year;
 };	
 
-const FirstDayOfTheCurrentWeek = ({currentDate}) => {
+const MondayOfTheCurrentWeek = ({currentDate}) => {
 		currentDate = GetFormattedDate();
 		return (
 			  <span>{currentDate}</span>
 		);
 };
 
-export default FirstDayOfTheCurrentWeek;
+export default MondayOfTheCurrentWeek;
 
 
 

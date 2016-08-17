@@ -4,7 +4,7 @@ import {bindActionCreators} from 'redux';
 import * as courseActions from '../../actions/courseActions';
 import CourseForm from './CourseForm';
 import toastr from 'toastr';
-import FirstDayOfTheCurrentWeek from '../common/FirstDayOfTheCurrentWeek.js';
+import MondayOfTheCurrentWeek from '../common/MondayOfTheCurrentWeek.js';
 
 
 class ManageCoursePage extends React.Component {
@@ -65,7 +65,7 @@ class ManageCoursePage extends React.Component {
 		debugger;
 		return (
 				<div>
-					<h1>O3 for week of <FirstDayOfTheCurrentWeek currentDate={this.state.currentDate} /></h1>
+					<h1>O3 for week of <MondayOfTheCurrentWeek currentDate={this.state.currentDate} /></h1>
 					<CourseForm allAuthors={this.props.authors}  allTeacherAids={this.props.teacherAids} allRatingRanks={this.props.ratingRanks} onChange={this.updateCourseState}  onSave={this.saveCourse} course={this.state.course} errors={this.state.errors} saving={this.state.saving} />
 				</div>
 		);
