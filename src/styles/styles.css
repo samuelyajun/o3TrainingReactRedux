@@ -1,0 +1,71 @@
+/* Styles */
+#app {
+	font: 14px 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	color: #4d4d4d;
+	min-width: 550px;
+	max-width: 850px;
+	margin: 0 auto;
+}
+
+#header {
+	background: #f7f7f7;
+	height: 50px;
+
+}
+
+#hearderSearchBar {
+
+}
+
+a.active {
+	background: #e5e5e5;
+}
+
+
+nav {
+	padding-top: 20px;
+	padding-right: 0px;
+}
+
+.center {
+	
+   	text-align:center;
+   	vertical-align: middle;
+}
+
+.whiteFont {
+	color: white;
+}
+
+#associateTitleDiv {
+	background: #4169E1;
+	height: 80px;
+	vertical-align: middle;
+}
+.floatLeft {
+	float: left;
+}
+
+.floatRight {
+	float: right;
+}
+
+.floatCenter {
+	float: center;
+}
+
+.commentBox {
+	height: 500px;
+}
+
+/*
+.clearLeft {
+	clear: left;
+	width: 50%;
+}
+
+.clearRight {
+	clear: right;
+	width: 50%;
+}
+*/
