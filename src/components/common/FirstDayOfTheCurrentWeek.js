@@ -9,8 +9,8 @@ const GetFormattedDate = () =>  {
 	  return month + '/' + day + '/' + year;
 };	
 
-const FirstDayOfTheCurrentWeek = () => {
-		const currentDate = GetFormattedDate();
+const FirstDayOfTheCurrentWeek = ({currentDate}) => {
+		currentDate = GetFormattedDate();
 		return (
 			  <span>{currentDate}</span>
 		);
