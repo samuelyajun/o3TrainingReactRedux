@@ -6,7 +6,7 @@ import delay from './delay';
 const courses = [
   {
     id: "react-flux-building-applications",
-    title: "Building Applications in React and Flux",
+    title: "8/15/2016",
     watchHref: "http://www.pluralsight.com/courses/react-flux-building-applications",
     authorId: "cory-house",
     teacherAidId: "christine-house",
@@ -16,7 +16,7 @@ const courses = [
   },
   {
     id: "clean-code",
-    title: "Clean Code: Writing Code for Humans",
+    title: "8/8/2016",
     watchHref: "http://www.pluralsight.com/courses/writing-clean-code-humans",
     authorId: "cory-house",
     teacherAidId: "christine-house",
@@ -26,7 +26,7 @@ const courses = [
   },
   {
     id: "architecture",
-    title: "Architecting Applications for the Real World",
+    title: "8/1/2016",
     watchHref: "http://www.pluralsight.com/courses/architecting-applications-dotnet",
     authorId: "cory-house",
     teacherAidId: "sam-allen",
@@ -36,7 +36,7 @@ const courses = [
   },
   {
     id: "career-reboot-for-developer-mind",
-    title: "Becoming an Outlier: Reprogramming the Developer Mind",
+    title: "7/25/2016",
     watchHref: "http://www.pluralsight.com/courses/career-reboot-for-developer-mind",
     authorId: "cory-house",
     teacherAidId: "sam-allen",
@@ -46,7 +46,7 @@ const courses = [
   },
   {
     id: "web-components-shadow-dom",
-    title: "Web Component Fundamentals",
+    title: "7/18/2016",
     watchHref: "http://www.pluralsight.com/courses/web-components-shadow-dom",
     authorId: "cory-house",
     teacherAidId: "bo-wahlin",

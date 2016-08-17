@@ -5,8 +5,7 @@ const CourseListRow = ({course}) => {
 	debugger;
 	return (
 		<tr>
-			<td><Link to={'/course/' + course.id}>{course.title}</Link></td>
-			<td><Link to={'/course/' + course.id}>{course.ratingRankId}</Link></td>
+			<td><Link to={'/course/' + course.id}>{course.title}<br />{course.ratingRankId}</Link></td>
 		</tr>
 	);
 };
