@@ -5,7 +5,7 @@ import * as courseActions from '../../actions/courseActions';
 import CourseForm from './CourseForm';
 import toastr from 'toastr';
 import FirstDayOfTheCurrentWeek from '../common/FirstDayOfTheCurrentWeek.js';
-import dateApi from '../../api/dateApi.js';
+
 
 class ManageCoursePage extends React.Component {
 	constructor(props, context) {
@@ -66,7 +66,7 @@ class ManageCoursePage extends React.Component {
 		return (
 				<div>
 					<h1>O3 for week of <FirstDayOfTheCurrentWeek currentDate={this.state.currentDate} /></h1>
-					<CourseForm allAuthors={this.props.authors}  allTeacherAids={this.props.teacherAids} onChange={this.updateCourseState}  onSave={this.saveCourse} course={this.state.course} errors={this.state.errors} saving={this.state.saving} />
+					<CourseForm allAuthors={this.props.authors}  allTeacherAids={this.props.teacherAids} allRatingRanks={this.props.ratingRanks} onChange={this.updateCourseState}  onSave={this.saveCourse} course={this.state.course} errors={this.state.errors} saving={this.state.saving} />
 				</div>
 		);
 	}
@@ -76,6 +76,7 @@ ManageCoursePage.propTypes = {
 	course: PropTypes.object.isRequired,
 	authors: PropTypes.array.isRequired,
 	teacherAids: PropTypes.array.isRequired,
+	ratingRanks: PropTypes.array.isRequired,
 	actions: PropTypes.object.isRequired
 
 };
@@ -115,12 +116,20 @@ function mapStateToProps(state, ownProps) {
 		};
 	});
 
-	debugger;
+	const ratingRankFormattedForDropdown = state.ratingRanks.map(ratingRank => {
+		return {
+			value: ratingRank.id,
+			text: ratingRank.rating
+		};
+	});
+
+
 
 	return {
 		course: course,
 		authors: authorsFormattedForDropdown,
-		teacherAids: teacherAidsFormattedForDropdown
+		teacherAids: teacherAidsFormattedForDropdown,
+		ratingRanks: ratingRankFormattedForDropdown
 	};
 }
 
