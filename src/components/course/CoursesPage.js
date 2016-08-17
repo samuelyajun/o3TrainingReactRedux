@@ -3,6 +3,7 @@ import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
 import * as courseActions from '../../actions/courseActions';
 import CourseList from './CourseList';
+import AssociateActivityHeader from './AssociateActivityHeader';
 import {browserHistory} from 'react-router';
 
 class CoursesPage extends React.Component {
@@ -22,18 +23,9 @@ class CoursesPage extends React.Component {
 		const {courses} = this.props;
 		return (
 			<div>
-				<br />
-				<br />
-				<p>Training Cycles>>Baltimore 2015 Cycle 1 >> Associate Activity </p>
-				<h1 className="center">Associate Activity</h1>
-				<div id="associateTitleDiv" className="center">
-					<h1 className="center whiteFont">Jack Gibson</h1>
-					<h6 className="center whiteFont">Instructor: Dab Pauthor</h6>
-
-				</div>
-				<br />
-					<input type="submit" value="+" className="btn btn-primary" onClick={this.redirectToAddCoursePage}/>
-					<CourseList courses={courses}/>
+				<AssociateActivityHeader />
+				<input type="submit" value="+" className="btn btn-primary" onClick={this.redirectToAddCoursePage}/>
+				<CourseList courses={courses}/>
 			</div>
 		);
 	}
