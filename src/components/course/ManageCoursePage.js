@@ -74,6 +74,7 @@ class ManageCoursePage extends React.Component {
 		return (
 				<div>
 					<h1>O3 for week of {this.state.currentDate}</h1>
+					<h2><FirstDayOfTheCurrentWeek /></h2>
 					<CourseForm allAuthors={this.props.authors}  allTeacherAids={this.props.teacherAids} onChange={this.updateCourseState}  onSave={this.saveCourse} course={this.state.course} errors={this.state.errors} saving={this.state.saving} />
 				</div>
 		);
