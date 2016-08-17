@@ -13,7 +13,7 @@ class ManageCoursePage extends React.Component {
 
 		this.state = {
 			course: Object.assign({}, this.props.course),
-			currentDate: [{date:new Date()}],		
+			currentDate: this.GetFormattedDate(),		
 			errors: {},
 			saving: false
 		};
@@ -23,12 +23,23 @@ class ManageCoursePage extends React.Component {
 	}
 
 
+
+
 	componentWillReceiveProps(nextProps) {
 		debugger;
 		if (this.props.course.id != nextProps.course.id) {
 			//Necessary to populate form when existing course is loaded directly.
 			this.setState({course: Object.assign({}, nextProps.course)});
 		}
+	}
+
+	GetFormattedDate() {
+	  var date = new Date();
+	  var year = date.getFullYear();
+	  var month = (1 + date.getMonth()).toString();
+	  var day = date.getDate().toString();
+	  day = day.length > 1 ? day : '0' + day;
+	  return month + '/' + day + '/' + year;
 	}	
 
 	updateCourseState(event) {
@@ -62,7 +73,7 @@ class ManageCoursePage extends React.Component {
 		debugger;
 		return (
 				<div>
-					<h1>O3 for week of {this.state.currentDate[0].date.toString().split(" ").slice(1,4).join(' ')}</h1>
+					<h1>O3 for week of {this.state.currentDate}</h1>
 					<CourseForm allAuthors={this.props.authors}  allTeacherAids={this.props.teacherAids} onChange={this.updateCourseState}  onSave={this.saveCourse} course={this.state.course} errors={this.state.errors} saving={this.state.saving} />
 				</div>
 		);
