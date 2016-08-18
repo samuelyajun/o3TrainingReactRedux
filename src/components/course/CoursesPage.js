@@ -6,6 +6,7 @@ import CourseList from './CourseList';
 import AssociateActivityHeader from './AssociateActivityHeader';
 import {browserHistory} from 'react-router';
 import MondayOfTheCurrentWeek from '../common/MondayOfTheCurrentWeek';
+import Frame from 'react-frame-component';
 
 class CoursesPage extends React.Component {
 	constructor(props, context) {
@@ -32,10 +33,8 @@ class CoursesPage extends React.Component {
 						<input type="submit" value="+" className="btn btn-primary" onClick={this.redirectToAddCoursePage}/>Acitivity Feed
 						<CourseList courses={courses}/>
 					</div>
-					<div className="floatRight border colRight">
-						<h1>O3 for week of <MondayOfTheCurrentWeek/></h1>
-						Hi
-					</div>
+					<iframe className="floatRight border colRight" src={'/course/' + courses[0].id}>
+					</iframe>
 				</div>
 			</div>
 		);
