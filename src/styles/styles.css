@@ -63,7 +63,9 @@ nav {
 }
 
 .commentBox {
-	height: 500px;
+	padding: 0;
+    margin: 0;
+    width:500px; 
 }
 
 .border {
@@ -80,17 +82,33 @@ nav {
 .colLeft {
   display: table-cell;
   width: 15%; /* depends on the number of columns */
-  height: 600px;
+  height: 400px;
 
 }
 
 .colRight{
   display: table-cell;
   width: 85%; /* depends on the number of columns */
-  height: 600px;
+  height: 400px;
 
 }
 
 .container {
 	position: relative;
+}
+
+.dropDownWidth {
+	width: 200px;
+}
+
+.h1Width {
+	width: 400px;
+}
+
+.leftPadingSpace {
+	padding-left: 4mm;
+}
+
+.yScrollable {
+	overflow-y: scroll;
 }

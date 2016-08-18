@@ -10,7 +10,7 @@ const CommentTextInput = ({name, label, onChange, placeholder, value, error}) =>
 		<div className={wrapperClass}>
 			<label htmlFor={name}>{label}</label>
 			<div className="field">
-				<textarea name={name} className="form-control commentBox" rows="5" placeholder={placeholder} value={value} onChange={onChange}></textarea>
+				<textarea name={name} className="commentBox" rows="5" cols="10" placeholder={placeholder} value={value} onChange={onChange}></textarea>
 				{error && <div className="alert alert-danger">{error}</div>}
 			</div>
 		</div>
