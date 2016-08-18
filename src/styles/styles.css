@@ -30,7 +30,11 @@ nav {
 .center {
 	
    	text-align:center;
-   	vertical-align: middle;
+    vertical-align: bottom;
+}
+
+.bottom {
+	vertical-align: bottom;
 }
 
 .whiteFont {
@@ -44,10 +48,14 @@ nav {
 }
 .floatLeft {
 	float: left;
+	width: 50%;
+	height: 100%;
 }
 
 .floatRight {
 	float: right;
+	width: 50%;
+	height: 100%;
 }
 
 .floatCenter {
@@ -58,14 +66,31 @@ nav {
 	height: 500px;
 }
 
-/*
-.clearLeft {
-	clear: left;
-	width: 50%;
+.border {
+	border-style: solid;
+	border-width: 1px;
+	border-color: grey;
 }
 
-.clearRight {
-	clear: right;
-	width: 50%;
+.row {
+  /*display: flex;*/ /* equal height of the children */
+  display:  table-row;
 }
-*/
+
+.colLeft {
+  display: table-cell;
+  width: 15%; /* depends on the number of columns */
+  height: 600px;
+
+}
+
+.colRight{
+  display: table-cell;
+  width: 85%; /* depends on the number of columns */
+  height: 600px;
+
+}
+
+.container {
+	position: relative;
+}

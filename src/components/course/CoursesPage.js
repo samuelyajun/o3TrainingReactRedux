@@ -5,6 +5,7 @@ import * as courseActions from '../../actions/courseActions';
 import CourseList from './CourseList';
 import AssociateActivityHeader from './AssociateActivityHeader';
 import {browserHistory} from 'react-router';
+import MondayOfTheCurrentWeek from '../common/MondayOfTheCurrentWeek';
 
 class CoursesPage extends React.Component {
 	constructor(props, context) {
@@ -23,9 +24,19 @@ class CoursesPage extends React.Component {
 		const {courses} = this.props;
 		return (
 			<div>
-				<AssociateActivityHeader />
-				<input type="submit" value="+" className="btn btn-primary" onClick={this.redirectToAddCoursePage}/>
-				<CourseList courses={courses}/>
+				<div>
+					<AssociateActivityHeader />
+				</div>
+				<div class="container">
+					<div className="floatLeft border colLeft">
+						<input type="submit" value="+" className="btn btn-primary" onClick={this.redirectToAddCoursePage}/>Acitivity Feed
+						<CourseList courses={courses}/>
+					</div>
+					<div className="floatRight border colRight">
+						<h1>O3 for week of <MondayOfTheCurrentWeek/></h1>
+						Hi
+					</div>
+				</div>
 			</div>
 		);
 	}
