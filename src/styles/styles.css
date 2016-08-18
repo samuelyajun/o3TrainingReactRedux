@@ -28,13 +28,20 @@ nav {
 }
 
 .center {
-	
-   	text-align:center;
-    vertical-align: bottom;
+   	text-align: right;
+    vertical-align: middle;
+}
+
+.textRight {
+   	/*text-align: right;*/
 }
 
 .bottom {
 	vertical-align: bottom;
+}
+
+.top {
+	vertical-align: top;
 }
 
 .whiteFont {
@@ -60,6 +67,15 @@ nav {
 
 .floatCenter {
 	float: center;
+	width: 50%;
+	height: 100%;
+}
+
+.floatLeftTextCenter {
+	float: left;
+	width: 50%;
+	height: 100%;
+	text-align:center;
 }
 
 .commentBox {
@@ -81,14 +97,14 @@ nav {
 
 .colLeft {
   display: table-cell;
-  width: 15%; /* depends on the number of columns */
+  width: 20%; /* depends on the number of columns */
   height: 400px;
 
 }
 
 .colRight{
   display: table-cell;
-  width: 85%; /* depends on the number of columns */
+  width: 80%; /* depends on the number of columns */
   height: 400px;
 
 }
@@ -99,6 +115,10 @@ nav {
 
 .dropDownWidth {
 	width: 200px;
+}
+
+.statusDropDownWidth {
+	width: 100px;
 }
 
 .h1Width {

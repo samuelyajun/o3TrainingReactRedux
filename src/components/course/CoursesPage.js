@@ -80,7 +80,7 @@ class CoursesPage extends React.Component {
 				</div>
 				<div class="container">
 					<div className="floatLeft border colLeft yScrollable">
-						<input type="submit" value="+" className="btn btn-primary" onClick={this.redirectToAddCoursePage}/>Acitivity Feed
+						<input type="submit" value="+" className="btn btn-primary" onClick={this.redirectToAddCoursePage}/>&nbsp;Acitivity Feed
 						<CourseList courses={courses}/>
 					</div>
 					<div className="floatRight border colRight leftPadingSpace yScrollable">

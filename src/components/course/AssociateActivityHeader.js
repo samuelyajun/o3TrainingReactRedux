@@ -9,12 +9,19 @@ const AssociateActivityHeader = () => {
 				<p>Training Cycles>>Baltimore 2015 Cycle 1 >> Associate Activity </p>
 				<h1 className="center">Associate Activity</h1>
 				<div id="associateTitleDiv" className="center">
-					<div>
-						<h2 className="whiteFont bottom">Jack Gibson</h2>
-						<h6 className="whiteFont bottom">Instructor: Dab Pauthor</h6>
+					<div className="floatLeft">
+						<h2 className="whiteFont bottom center">Jack Gibson</h2>
+						<h6 className="whiteFont top center">Instructor: Dab Pauthor</h6>
+					</div>
+					<div className="floatRight center">
+						<b  className="whiteFont center">Status: </b>
+						<select className="dropdown statusDropDownWidth center">
+							<option value="">Active</option>
+							<option value="">Not Active</option>
+						</select>
 					</div>
 				</div>
-				<br />
+				<br/>
 			</div>
 	);
 };
