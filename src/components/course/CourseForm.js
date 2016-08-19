@@ -12,7 +12,7 @@ const CourseForm = ({course, allAuthors, allTeacherAids, allRatingRanks, onSave,
 		<form>
 			<h2>O3 for week of <MondayOfTheCurrentWeek  currentDate={course.title} /></h2>
 			<SelectInput name="authorId" label="Instructor" value={course.authorId} defaultOption="Select Instructor" options={allAuthors} onChange={onChange} error={errors.authorId}/>
-			<SelectInput name="teacherAidId" label="Teacher Aid" value={course.teacherAidId} defaultOption="Select Teacher Aid" options={allTeacherAids} onChange={onChange} error={errors.teacherAidId}/>
+			<SelectInput name="teacherAidId" label="Teacher's Aid" value={course.teacherAidId} defaultOption="Select Teacher Aid" options={allTeacherAids} onChange={onChange} error={errors.teacherAidId}/>
 			<SelectInput name="ratingRankId" label="Rating" value={course.ratingRankId} defaultOption="Select Rating" options={allRatingRanks} onChange={onChange} error={errors.teacherAidId}/>
 			<CommentTextInput name="category" label="Session Notes" value={course.category} onChange={onChange} error={errors.category}/>
 			<CommentTextInput name="length" label="Follwow up on Previous O3 Action Items" value={course.length} onChange={onChange} error={errors.length}/>

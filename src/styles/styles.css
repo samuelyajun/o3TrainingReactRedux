@@ -96,7 +96,6 @@ nav {
 }
 
 .row {
-  /*display: flex;*/ /* equal height of the children */
   display:  table-row;
 }
 
@@ -136,4 +135,18 @@ nav {
 
 .yScrollable {
 	overflow-y: scroll;
+}
+
+tr:hover { 
+   background: lightgrey; 
+}
+
+td a { 
+   display: block; 
+   border: 1px solid black;
+   padding: 16px; 
+}
+
+.table-row{
+cursor:pointer;
 }
