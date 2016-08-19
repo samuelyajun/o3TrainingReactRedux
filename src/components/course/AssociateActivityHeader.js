@@ -7,11 +7,11 @@ const AssociateActivityHeader = () => {
 				<br />
 				<br />
 				<p>Training Cycles>>Baltimore 2015 Cycle 1 >> Associate Activity </p>
-				<h1 className="center">Associate Activity</h1>
+				<h1 className="centerTextCenter">Associate Activity</h1>
 				<div id="associateTitleDiv" className="center">
 					<div className="floatLeft">
-						<h2 className="whiteFont bottom center">Jack Gibson</h2>
-						<h6 className="whiteFont top center">Instructor: Dab Pauthor</h6>
+						<h2 className="whiteFont bottom textRight">Jack Gibson</h2>
+						<h6 className="whiteFont top textRight">Instructor: Dab Pauthor</h6>
 					</div>
 					<div className="floatRight center">
 						<b  className="whiteFont center">Status: </b>

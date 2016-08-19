@@ -2,6 +2,7 @@ import React from 'react';
 import TextInput from '../common/TextInput';
 import CommentTextInput from '../common/CommentTextInput';
 import SelectInput from '../common/SelectInput';
+import MondayOfTheCurrentWeek from '../common/MondayOfTheCurrentWeek';
 
 
 //stateless function component
@@ -11,6 +12,7 @@ const CourseForm = ({course, allAuthors, allTeacherAids, allRatingRanks, onSave,
 		<form>
 			<br/>
 			<TextInput name="title" label="Title" value={course.title} onChange={onChange} error={errors.title}/> 
+			<h1>O3 for week of <MondayOfTheCurrentWeek  currentDate={course.title} /></h1>
 			<SelectInput name="authorId" label="Instructor" value={course.authorId} defaultOption="Select Instructor" options={allAuthors} onChange={onChange} error={errors.authorId}/>
 			<SelectInput name="teacherAidId" label="Teacher Aid" value={course.teacherAidId} defaultOption="Select Teacher Aid" options={allTeacherAids} onChange={onChange} error={errors.teacherAidId}/>
 			<SelectInput name="ratingRankId" label="Rating" value={course.ratingRankId} defaultOption="Select Rating" options={allRatingRanks} onChange={onChange} error={errors.teacherAidId}/>

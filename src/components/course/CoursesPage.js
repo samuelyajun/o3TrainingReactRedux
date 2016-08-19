@@ -17,7 +17,7 @@ class CoursesPage extends React.Component {
 
 		this.state = {
 			course: Object.assign({}, this.props.course),
-			currentDate: '8/22/2016',		
+			currentDate: '',		
 			errors: {},
 			saving: false
 		};

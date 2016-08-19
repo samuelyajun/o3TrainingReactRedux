@@ -32,6 +32,11 @@ nav {
     vertical-align: middle;
 }
 
+.centerTextCenter {
+   	text-align: center;
+    vertical-align: middle;
+}
+
 .textRight {
    	/*text-align: right;*/
 }
