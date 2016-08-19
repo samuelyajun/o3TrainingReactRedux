@@ -65,7 +65,6 @@ class ManageCoursePage extends React.Component {
 		debugger;
 		return (
 				<div>
-					<h1>O3 for week of <MondayOfTheCurrentWeek currentDate={this.state.currentDate} /></h1>
 					<CourseForm allAuthors={this.props.authors}  allTeacherAids={this.props.teacherAids} allRatingRanks={this.props.ratingRanks} onChange={this.updateCourseState}  onSave={this.saveCourse} course={this.state.course} errors={this.state.errors} saving={this.state.saving} />
 				</div>
 		);
@@ -96,7 +95,7 @@ function getCourseById(courses, id) {
 function mapStateToProps(state, ownProps) {
 	const courseId = ownProps.params.id; // from the path `/course/:id`
 
-	let course = {id: '', watchHref: '', title: '8/22/2016', authorId: '', length: '', category: ''};
+	let course = {id: '', watchHref: '', title: '', authorId: '', length: '', category: ''};
 
 	if (courseId && state.courses.length > 0) {
 		course = getCourseById(state.courses, courseId);

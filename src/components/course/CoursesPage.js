@@ -84,7 +84,6 @@ class CoursesPage extends React.Component {
 						<CourseList courses={courses}/>
 					</div>
 					<div className="floatRight border colRight leftPadingSpace yScrollable">
-						<h1>O3 for week of <MondayOfTheCurrentWeek  currentDate={this.state.currentDate} /></h1>
 						<CourseForm allAuthors={this.props.authors}  allTeacherAids={this.props.teacherAids} allRatingRanks={this.props.ratingRanks} onChange={this.updateCourseState}  onSave={this.saveCourse} course={this.state.course} errors={this.state.errors} saving={this.state.saving} />
 					</div>
 				</div>
